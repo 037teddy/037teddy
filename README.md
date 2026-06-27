@@ -22,6 +22,7 @@ I enjoy learning new technologies and applying them to solve real-world problems
 - 🛒 [Supermarket Smart Trolley](#) – IoT + mobile integration  
 
 ### 📫 Connect with Me
+- annycare.site
 - GitHub: 037teddy(https://github.com/037teddy)  
 - LinkedIn: [your-linkedin](#)  
 - Email: teddymbayaki@gmail.com 
