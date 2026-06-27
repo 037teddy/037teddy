@@ -24,5 +24,5 @@ I enjoy learning new technologies and applying them to solve real-world problems
 ### 📫 Connect with Me
 - personal website: https://www.annycare.site/
 - GitHub: 037teddy(https://github.com/037teddy)  
-- LinkedIn: [your-linkedin](#)  
+- LinkedIn: https://www.linkedin.com/in/teddy-ijaka-631a77412/
 - Email: teddymbayaki@gmail.com 
