@@ -26,5 +26,5 @@ I enjoy learning new technologies and applying them to solve real-world problems
 - GitHub: 037teddy(https://github.com/037teddy)  
 - LinkedIn: https://www.linkedin.com/in/teddy-ijaka-631a77412/
 - Email: teddymbayaki@gmail.com
-- X: @TeddyMbayaki
+- X: https://x.com/TeddyMbayaki
 - Call/Whatsapp: 0742396020
