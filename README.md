@@ -19,7 +19,8 @@ I enjoy learning new technologies and applying them to solve real-world problems
 ### 📌 Current Projects
 - 🚧 [Swift Wallet Integration Project](#) – digital payments with M-Pesa + crypto settlement  
 - 📱 [Tic Tac Toe AI Game](#) – Android app using Minimax algorithm  
-- 🛒 [Supermarket Smart Trolley](#) – IoT + mobile integration  
+- 🛒 [Supermarket Smart Trolley](#) – IoT + mobile integration
+- https://www.annycare.site/ - IOT Based blind corner Vehicle detection System
 
 ### 📫 Connect with Me
 - Business website: https://www.annycare.site/
