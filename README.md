@@ -23,7 +23,7 @@ I enjoy learning new technologies and applying them to solve real-world problems
 - https://www.annycare.site/ - IOT Based blind corner Vehicle detection System
 
 ### 📫 Connect with Me
-- Business website: https://www.annycare.site/
+- Business website: https://www.teddyxxl.site/
 - GitHub: 037teddy(https://github.com/037teddy)  
 - LinkedIn: https://www.linkedin.com/in/teddy-ijaka-631a77412/
 - Email: teddymbayaki@gmail.com
