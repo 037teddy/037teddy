@@ -1,21 +1,97 @@
+# 👋 Hi, I'm Teddy Mbayaki
 
-# 👋 Hi, I'm 037teddy
+### Software Engineer | AI Engineering | Backend & Full-Stack Development
 
-💻 Software Developer | 📱 Mobile Developer | 🔹 Visual Basic Enthusiast  
+I build **scalable backend systems, cloud-native applications, modern web interfaces, and AI-powered products**.
 
-I'm passionate about building scalable applications, intuitive mobile apps, and reliable desktop solutions.  
-I enjoy learning new technologies and applying them to solve real-world problems.
+My experience spans backend engineering, frontend development, cloud infrastructure, databases, DevOps, and real-world LLM integration. I enjoy solving complex technical problems, improving system reliability, and turning ideas into production-ready software.
 
-### 🚀 What I Do
-- **Mobile Development**: Android (Java, Kotlin), iOS (Swift), Cross-platform (Flutter, React Native)  
-- **Software Development**: Full-stack web apps (JavaScript/TypeScript, PHP, Node.js, Vue.js)  
-- **Desktop Applications**: Visual Basic .NET & legacy support  
+## 🚀 What I Do
 
-### 🛠️ Tech Stack
-- **Languages**: Java, Kotlin, VB.NET, JavaScript, PHP, TypeScript  
-- **Frameworks**: Vue.js, Laravel, Express, .NET  
-- **Databases**: MySQL, MongoDB, SQLite  
-- **Tools**: Git, GitHub, Postman, Docker  
+* **Backend Engineering** — Node.js, Python, Java, Go, RESTful APIs, GraphQL & microservices
+* **AI Engineering** — LLM integration, AI-powered applications, prompt engineering & Vercel AI SDK
+* **Frontend Development** — React, Next.js, TypeScript & Tailwind CSS
+* **Cloud & DevOps** — AWS, Docker, Kubernetes, CI/CD & Terraform
+* **Databases** — PostgreSQL, MySQL, MongoDB & DynamoDB
+* **Mobile Development** — Android, Java/Kotlin, Flutter & React Native
+* **System Engineering** — Linux administration, troubleshooting, monitoring & performance optimization
+
+## 🧠 AI & LLM Engineering
+
+Currently expanding my expertise in AI engineering through hands-on product development, including:
+
+* Integrating LLMs into production web applications
+* Building multi-turn AI chat experiences
+* Working with Google Gemini and Claude
+* Applying structured prompt-engineering techniques
+* Testing and debugging AI-enabled applications
+* Connecting AI systems to live application data
+
+## ☁️ Cloud & Engineering
+
+I work with cloud-native technologies and engineering practices including:
+
+**AWS:** EC2 · Lambda · API Gateway · RDS · S3 · DynamoDB · CloudWatch · IAM · VPC
+
+**DevOps:** Docker · Kubernetes · CI/CD · Terraform · Linux
+
+**Development:** Git · GitHub · REST APIs · GraphQL · Automated Testing
+
+## 🛠️ Tech Stack
+
+**Languages:**
+Java · Kotlin · Python · Go · JavaScript · TypeScript · PHP · VB.NET
+
+**Frontend:**
+React · Next.js · Tailwind CSS
+
+**Backend:**
+Node.js · Express · Python · Java · Go · Microservices
+
+**AI:**
+LLM Integration · Gemini · Claude · Vercel AI SDK · Prompt Engineering
+
+**Databases:**
+PostgreSQL · MySQL · MongoDB · DynamoDB · SQLite
+
+**Cloud & DevOps:**
+AWS · Docker · Kubernetes · Terraform · CI/CD · Vercel
+
+**Testing & Quality:**
+Vitest · React Testing Library · Lighthouse · axe DevTools · WCAG 2.1 AA
+
+## 📌 Featured Work
+
+🔹 **AI-Powered Applications**
+Building applications that combine modern web technologies with real-time LLM capabilities.
+
+🔹 **Cloud-Native Systems**
+Designing and deploying scalable backend services, APIs and database-driven applications.
+
+🔹 **Full-Stack Applications**
+Developing complete applications across frontend, backend, APIs and databases.
+
+🔹 **Mobile Applications**
+Building Android and cross-platform applications using Java, Kotlin, Flutter and React Native.
+
+## 📈 Currently
+
+* Building AI-integrated applications
+* Exploring advanced AI engineering and LLM architectures
+* Developing with Next.js and TypeScript
+* Expanding cloud and DevOps expertise
+* Improving software quality through automated testing and accessibility practices
+
+## 🤝 Let's Connect
+
+I'm interested in **software engineering, AI engineering, cloud computing, backend systems, and innovative technology projects**.
+
+📧 **Email:** [teddymbayaki@gmail.com](mailto:teddymbayaki@gmail.com)
+
+---
+
+⭐ *Building reliable software. Exploring AI. Solving real-world problems.*
+  
 
 ### 📌 Current Projects
 - 🚧 [Swift Wallet Integration Project](#) – digital payments with M-Pesa + crypto settlement  
