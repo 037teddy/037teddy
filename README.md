@@ -94,6 +94,7 @@ I'm interested in **software engineering, AI engineering, cloud computing, backe
   
 
 ### 📌 Current Projects
+-https://academy.claude.com/verify/5230c2d7826be683d7df10ce0f00dbe9
 - 🚧 [Swift Wallet Integration Project](#) – digital payments with M-Pesa + crypto settlement  
 - 📱 [Tic Tac Toe AI Game](#) – Android app using Minimax algorithm  
 - 🛒 [Supermarket Smart Trolley](#) – IoT + mobile integration
