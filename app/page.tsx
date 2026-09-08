@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Zap, Smartphone, Globe, Cpu } from "lucide-react";
+import { ArrowRight, Zap, Smartphone, Globe, Cpu, GitBranch, Mail, BriefcaseBusiness } from "lucide-react";
 import { getFeaturedProjects } from "@/data/projects";
 import ProjectCard from "@/components/projects/ProjectCard";
 
@@ -39,226 +39,214 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Hero */}
       <section
         style={{
-          minHeight: "calc(100vh - 64px)",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          padding: "clamp(40px, 10vw, 80px) clamp(16px, 5vw, 24px)",
-          maxWidth: 1100,
-          margin: "0 auto",
           position: "relative",
-          width: "100%",
+          minHeight: "100vh",
+          background: "linear-gradient(135deg, #110b06 0%, #2b1a08 52%, #120b06 100%)",
+          overflow: "hidden",
         }}
       >
-        {/* Background glow */}
         <div
           style={{
             position: "absolute",
-            top: "20%",
-            left: "50%",
-            transform: "translateX(-50%)",
-            width: 600,
-            height: 300,
-            background:
-              "radial-gradient(ellipse, rgba(108,99,255,0.06) 0%, transparent 70%)",
+            inset: 0,
+            background: "radial-gradient(circle at top left, rgba(231, 165, 31, 0.2), transparent 30%), radial-gradient(circle at bottom right, rgba(255, 247, 232, 0.04), transparent 25%)",
             pointerEvents: "none",
           }}
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center relative z-10">
-          {/* Text Content */}
-          <div className="md:col-span-7 slide-in-left" style={{ position: "relative", minWidth: 0 }}>
-            <div
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: 6,
-                padding: "6px 12px",
-                borderRadius: 100,
-                border: "1px solid var(--border)",
-                background: "rgba(108,99,255,0.08)",
-                fontSize: "clamp(11px, 2vw, 13px)",
-                color: "var(--accent)",
-                fontWeight: 500,
-                marginBottom: "clamp(16px, 4vw, 28px)",
-                animation: "fadeUp 0.8s ease forwards",
-              }}
-            >
-              <span
-                style={{
-                  width: 6,
-                  height: 6,
-                  borderRadius: "50%",
-                  background: "var(--accent-2)",
-                  display: "inline-block",
-                  animation: "pulse 2s ease-in-out infinite",
-                }}
-              />
-              Available for projects · Nairobi, Kenya
-            </div>
-
-            <h1
-              style={{
-                fontSize: "clamp(28px, 6vw, 56px)",
-                fontWeight: 800,
-                letterSpacing: "-1px",
-                lineHeight: 1.2,
-                marginBottom: "clamp(16px, 4vw, 20px)",
-                color: "var(--text)",
-                animation: "fadeUp 0.8s ease forwards 0.1s both",
-              }}
-            >
-              Hi, I&apos;m Teddy.{" "}
-              <span
-                style={{
-                  background: "linear-gradient(135deg, var(--accent), var(--accent-2))",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                  animation: "gradient-shift 6s ease infinite",
-                  backgroundSize: "200% 200%",
-                }}
-              >
-                I build software
-              </span>{" "}
-              that solves real problems.
-            </h1>
-
-            <p
-              style={{
-                fontSize: "clamp(14px, 2vw, 16px)",
-                color: "var(--text-muted)",
-                lineHeight: 1.6,
-                marginBottom: "clamp(24px, 5vw, 36px)",
-                maxWidth: 560,
-                animation: "fadeUp 0.8s ease forwards 0.2s both",
-              }}
-            >
-              Software and mobile developer with 2 years of experience. I help first-time founders launch software from the idea stage to reality in 4 to 6 weeks, so they can focus on their customers. Based in Nairobi, working with clients worldwide.
-            </p>
-
-            <div
-              style={{
-                display: "flex",
-                gap: 12,
-                flexWrap: "wrap",
-                width: "100%",
-                animation: "fadeUp 0.8s ease forwards 0.3s both",
-              }}
-            >
-              <Link
-                href="/projects"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  gap: 8,
-                  padding: "12px clamp(16px, 4vw, 28px)",
-                  borderRadius: 10,
-                  background: "var(--accent)",
-                  color: "#fff",
-                  fontWeight: 600,
-                  fontSize: "clamp(13px, 2vw, 15px)",
-                  textDecoration: "none",
-                  minHeight: 44,
-                  flex: "1 1 auto",
-                  minWidth: 140,
-                  transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-4px)";
-                  e.currentTarget.style.boxShadow = "0 12px 24px rgba(79, 70, 229, 0.3)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.boxShadow = "none";
-                }}
-              >
-                View My Work <ArrowRight size={16} />
-              </Link>
-              <Link
-                href="/contact"
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  gap: 8,
-                  padding: "12px clamp(16px, 4vw, 28px)",
-                  borderRadius: 10,
-                  border: "1px solid var(--border)",
-                  background: "transparent",
-                  color: "var(--text)",
-                  fontWeight: 600,
-                  fontSize: "clamp(13px, 2vw, 15px)",
-                  textDecoration: "none",
-                  minHeight: 44,
-                  flex: "1 1 auto",
-                  minWidth: 140,
-                  transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-4px)";
-                  e.currentTarget.style.borderColor = "var(--accent)";
-                  e.currentTarget.style.backgroundColor = "rgba(79, 70, 229, 0.05)";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
-                  e.currentTarget.style.borderColor = "var(--border)";
-                  e.currentTarget.style.backgroundColor = "transparent";
-                }}
-              >
-                Contact Me
-              </Link>
-            </div>
-          </div>
-
-          {/* Image Content */}
-          <div className="md:col-span-5 flex justify-center">
-            <div style={{ position: "relative" }} className="group">
+        <div
+          style={{
+            maxWidth: 1180,
+            margin: "0 auto",
+            padding: "104px 18px 60px",
+            position: "relative",
+            zIndex: 1,
+          }}
+        >
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1.1fr 0.9fr",
+              gap: 32,
+              alignItems: "center",
+            }}
+          >
+            <div style={{ maxWidth: 620 }}>
               <div
                 style={{
-                  position: "absolute",
-                  inset: -8,
-                  borderRadius: 24,
-                  background: "linear-gradient(135deg, var(--accent), var(--accent-2))",
-                  opacity: 0.15,
-                  filter: "blur(8px)",
-                  transition: "opacity 0.3s ease",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 8,
+                  background: "rgba(231, 165, 31, 0.1)",
+                  border: "1px solid rgba(231, 165, 31, 0.5)",
+                  borderRadius: 999,
+                  padding: "8px 16px",
+                  color: "#f3c45e",
+                  fontSize: 12,
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
+                  fontWeight: 700,
+                  marginBottom: 28,
                 }}
-                className="group-hover:opacity-25"
-              />
-              <img
-                src="/images/teddy.jpg"
-                alt="Teddy Mbayaki"
+              >
+                <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#e7a51f", display: "inline-block" }} />
+                Full-stack developer • frontend engineer • AI enthusiast
+              </div>
+
+              <h1
                 style={{
-                  width: 320,
-                  height: 380,
-                  objectFit: "cover",
-                  borderRadius: 20,
-                  border: "4px solid var(--surface)",
-                  boxShadow: "0 20px 40px -15px rgba(0,0,0,0.1)",
-                  position: "relative",
-                  zIndex: 1,
-                  transition: "transform 0.3s ease, border-color 0.3s ease",
+                  fontSize: "clamp(52px, 7vw, 118px)",
+                  lineHeight: 0.94,
+                  letterSpacing: "-0.06em",
+                  fontWeight: 900,
+                  color: "#f5f5f5",
+                  margin: 0,
                 }}
-                className="group-hover:scale-[1.02] group-hover:border-[var(--accent)]"
-              />
+              >
+                Hi, I&apos;m Teddy.
+              </h1>
+
+              <h2
+                style={{
+                  margin: "26px 0 18px",
+                  fontSize: "clamp(26px, 3vw, 40px)",
+                  lineHeight: 1.1,
+                  fontWeight: 700,
+                  color: "#e7a51f",
+                }}
+              >
+                I build Modern Web Solutions
+              </h2>
+
+              <p
+                style={{
+                  margin: "0 0 30px",
+                  maxWidth: 540,
+                  color: "rgba(255,255,255,0.75)",
+                  fontSize: 18,
+                  lineHeight: 1.7,
+                }}
+              >
+                Building modern web experiences and intelligent applications with clean UI, scalable architecture, and AI-powered solutions.
+              </p>
+
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 14, marginBottom: 26 }}>
+                <Link
+                  href="/projects"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 10,
+                    background: "linear-gradient(135deg, #e7a51f, #b86f08)",
+                    color: "#fff",
+                    border: "none",
+                    borderRadius: 12,
+                    padding: "16px 26px",
+                    fontWeight: 700,
+                    fontSize: 15,
+                    textDecoration: "none",
+                    boxShadow: "0 18px 30px rgba(255,77,184,0.25)",
+                  }}
+                >
+                  <ArrowRight size={16} />
+                  View Projects
+                </Link>
+
+                <Link
+                  href="/contact"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 8,
+                    background: "rgba(255,255,255,0.02)",
+                    border: "1px solid rgba(255,255,255,0.2)",
+                    color: "#fff",
+                    borderRadius: 12,
+                    padding: "16px 24px",
+                    fontWeight: 700,
+                    fontSize: 15,
+                    textDecoration: "none",
+                  }}
+                >
+                  Contact Me
+                </Link>
+              </div>
+
+              <div style={{ display: "flex", alignItems: "center", gap: 18, color: "rgba(255,255,255,0.9)", fontSize: 13, letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 700 }}>
+                <span style={{ opacity: 0.8 }}>Profiles</span>
+                <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                  <a href="https://github.com/037teddy" target="_blank" rel="noreferrer" style={{ color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", width: 28, height: 28, borderRadius: "50%", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.12)" }}>
+                    <GitBranch size={14} />
+                  </a>
+                  <a href="https://www.linkedin.com/in/teddy-ijaka-631a77412/" target="_blank" rel="noreferrer" style={{ color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", width: 28, height: 28, borderRadius: "50%", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.12)" }}>
+                    <Globe size={14} />
+                  </a>
+                  <a href="mailto:teddymbayaki@gmail.com" style={{ color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", width: 28, height: 28, borderRadius: "50%", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.12)" }}>
+                    <Mail size={14} />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+              <div
+                style={{
+                  position: "relative",
+                  width: "min(440px, 85vw)",
+                  padding: "16px 16px 12px",
+                  borderRadius: 28,
+                  background: "linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.03))",
+                  border: "1px solid rgba(255,255,255,0.12)",
+                  boxShadow: "0 25px 60px rgba(0,0,0,0.32)",
+                }}
+              >
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: "auto 18px 18px auto",
+                    width: 36,
+                    height: 36,
+                    borderRadius: 10,
+                    background: "rgba(255,255,255,0.08)",
+                    border: "1px solid rgba(255,255,255,0.14)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    color: "#fff",
+                    zIndex: 2,
+                  }}
+                >
+                  <BriefcaseBusiness size={16} />
+                </div>
+                <img
+                  src="/images/teddy.png"
+                  alt="Teddy Mbayaki"
+                  style={{
+                    display: "block",
+                    width: "100%",
+                    height: "min(72vh, 620px)",
+                    objectFit: "cover",
+                    borderRadius: 24,
+                    border: "1px solid rgba(255,255,255,0.12)",
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Skills ticker */}
       <div
         style={{
           borderTop: "1px solid var(--border)",
           borderBottom: "1px solid var(--border)",
           padding: "12px 0",
           overflow: "hidden",
-          background: "#ffffff",
+          background: "rgba(255,255,255,0.025)",
         }}
       >
         <div
@@ -407,13 +395,13 @@ export default function HomePage() {
                 animation: "float 3s ease-in-out infinite 0.2s",
               }}
             >
-              6 Wks
+              Flexible
             </div>
             <h3 style={{ fontSize: "clamp(16px, 3vw, 18px)", fontWeight: 700, marginBottom: 12, color: "var(--text)" }}>
-              Avg. Delivery Time
+              Delivery Approach
             </h3>
             <p style={{ fontSize: "clamp(13px, 2vw, 14px)", color: "var(--text-muted)", lineHeight: 1.6 }}>
-              Most projects move from kickoff to a shippable first version in about six weeks. This includes discovery, design decisions, development, and testing. Timeline depends on scope and complexity; we lock in a delivery window after the initial scoping so you can plan launches and marketing around a clear date.
+              Every project follows a clear process from discovery through development and testing. Delivery is planned around the scope, complexity, and priorities we agree on together.
             </p>
           </div>
         </div>
@@ -498,7 +486,7 @@ export default function HomePage() {
       <section
         style={{
           padding: "clamp(48px, 10vw, 96px) clamp(16px, 5vw, 24px)",
-          background: "#ffffff",
+          background: "rgba(255,255,255,0.025)",
           borderTop: "1px solid var(--border)",
           borderBottom: "1px solid var(--border)",
         }}
@@ -546,7 +534,7 @@ export default function HomePage() {
                   padding: "clamp(20px, 4vw, 28px) clamp(18px, 4vw, 24px)",
                   border: "1px solid var(--border)",
                   borderRadius: 14,
-                  background: "#ffffff",
+                  background: "rgba(255,255,255,0.035)",
                   animation: `fadeUp 0.8s ease forwards ${0.1 + i * 0.1}s`,
                   transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
                   cursor: "pointer",
@@ -565,8 +553,8 @@ export default function HomePage() {
                     width: 44,
                     height: 44,
                     borderRadius: 10,
-                    background: "rgba(108,99,255,0.12)",
-                    color: "var(--accent)",
+                    background: "rgba(255,77,184,0.12)",
+                    color: "#ff7ccd",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -598,7 +586,7 @@ export default function HomePage() {
       <section
         style={{
           padding: "64px 24px",
-          background: "var(--surface)",
+          background: "rgba(255,255,255,0.02)",
           borderTop: "1px solid var(--border)",
           borderBottom: "1px solid var(--border)",
           textAlign: "center",

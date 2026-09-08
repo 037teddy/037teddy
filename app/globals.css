@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #ffffff;
-  --surface: #ffffff;
-  --surface-2: #f8fafc;
-  --border: #e0e7ff;
-  --accent: #4f46e5;
-  --accent-2: #0d9488;
-  --text: #1f2937;
-  --text-muted: #6b7280;
-  --text-dim: #9ca3af;
+  --bg: #110b06;
+  --surface: rgba(112, 72, 23, 0.16);
+  --surface-2: rgba(173, 112, 27, 0.12);
+  --border: rgba(226, 164, 54, 0.22);
+  --accent: #e7a51f;
+  --accent-2: #f5c15b;
+  --text: #fff7e8;
+  --text-muted: rgba(255, 247, 232, 0.72);
+  --text-dim: rgba(255, 247, 232, 0.5);
 }
 
 * {
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: var(--bg);
+  background: linear-gradient(180deg, #110b06 0%, #1f1309 100%);
   color: var(--text);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -82,6 +82,29 @@ body {
 }
 .fade-up {
   animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.slide-up {
+  animation: slideUp 0.6s ease both;
+}
+
+.interactive-card {
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.interactive-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 77, 184, 0.35) !important;
 }
 
 /* Fade in animation */

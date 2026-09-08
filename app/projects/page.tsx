@@ -11,93 +11,45 @@ export default function ProjectsPage() {
   const others = projects.filter((p) => !p.featured);
 
   return (
-    <div style={{ maxWidth: 1100, margin: "0 auto", padding: "clamp(40px, 8vw, 64px) clamp(16px, 5vw, 24px) clamp(64px, 10vw, 96px)", backgroundColor: "#ffffff" }}>
-      {/* Header */}
-      <div style={{ marginBottom: "clamp(32px, 8vw, 56px)" }}>
-        <div
-          style={{
-            fontSize: "clamp(10px, 2vw, 12px)",
-            fontWeight: 600,
-            letterSpacing: 2,
-            color: "var(--accent)",
-            textTransform: "uppercase",
-            marginBottom: 8,
-          }}
-        >
-          Portfolio
+    <div style={{ background: "linear-gradient(180deg, #110b06 0%, #1f1309 100%)", minHeight: "100vh" }}>
+      <div style={{ maxWidth: 1180, margin: "0 auto", padding: "clamp(56px, 9vw, 96px) clamp(16px, 5vw, 24px) clamp(64px, 10vw, 96px)" }}>
+        <div className="slide-up" style={{ marginBottom: "clamp(32px, 8vw, 56px)", maxWidth: 680 }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 8, borderRadius: 999, padding: "8px 16px", fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f3c45e", border: "1px solid rgba(231, 165, 31, 0.45)", background: "rgba(231, 165, 31, 0.08)", marginBottom: 18 }}>
+            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#e7a51f", display: "inline-block" }} />
+            Portfolio
+          </div>
+          <h1 style={{ fontSize: "clamp(38px, 6vw, 72px)", fontWeight: 900, letterSpacing: "-0.06em", lineHeight: 0.96, margin: "0 0 16px", color: "#f5f5f5" }}>
+            Projects
+          </h1>
+          <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "rgba(255,255,255,0.76)", lineHeight: 1.7, margin: 0 }}>
+            A selection of software projects spanning web apps, mobile applications, IoT systems, and custom business tools.
+          </p>
         </div>
-        <h1
-          style={{
-            fontSize: "clamp(28px, 6vw, 52px)",
-            fontWeight: 800,
-            letterSpacing: "-1px",
-            marginBottom: 16,
-            color: "var(--text)",
-          }}
-        >
-          Projects
-        </h1>
-        <p style={{ fontSize: "clamp(14px, 2vw, 16px)", color: "var(--text-muted)", maxWidth: 520, lineHeight: 1.6 }}>
-          A selection of software projects spanning web apps, mobile applications,
-          IoT systems, and custom business tools.
-        </p>
-      </div>
 
-      {/* Featured */}
-      <div style={{ marginBottom: 16 }}>
-        <h2
-          style={{
-            fontSize: "clamp(11px, 2vw, 13px)",
-            fontWeight: 600,
-            letterSpacing: 1.5,
-            color: "var(--text-dim)",
-            textTransform: "uppercase",
-            marginBottom: "clamp(16px, 4vw, 24px)",
-          }}
-        >
-          Featured Work
-        </h2>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-            gap: "clamp(16px, 4vw, 24px)",
-          }}
-        >
-          {featured.map((p) => (
-            <ProjectCard key={p.slug} project={p} />
-          ))}
-        </div>
-      </div>
-
-      {/* Other projects */}
-      {others.length > 0 && (
-        <div style={{ marginTop: "clamp(40px, 8vw, 64px)" }}>
-          <h2
-            style={{
-              fontSize: "clamp(11px, 2vw, 13px)",
-              fontWeight: 600,
-              letterSpacing: 1.5,
-              color: "var(--text-dim)",
-              textTransform: "uppercase",
-              marginBottom: "clamp(16px, 4vw, 24px)",
-            }}
-          >
-            Other Projects
+        <div className="slide-up" style={{ marginBottom: 18 }}>
+          <h2 style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: 20 }}>
+            Featured Work
           </h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
-              gap: "clamp(16px, 4vw, 24px)",
-            }}
-          >
-            {others.map((p) => (
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 18 }}>
+            {featured.map((p) => (
               <ProjectCard key={p.slug} project={p} />
             ))}
           </div>
         </div>
-      )}
+
+        {others.length > 0 && (
+          <div className="slide-up" style={{ marginTop: "clamp(32px, 8vw, 60px)" }}>
+            <h2 style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: 20 }}>
+              Other Projects
+            </h2>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(260px, 1fr))", gap: 18 }}>
+              {others.map((p) => (
+                <ProjectCard key={p.slug} project={p} />
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

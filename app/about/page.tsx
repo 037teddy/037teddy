@@ -15,12 +15,6 @@ const skills = {
 
 const experience = [
   {
-    role: "Software Developer",
-    company: "Xiracom",
-    period: "Recent",
-    desc: "Developed software solutions for clients across web and mobile platforms.",
-  },
-  {
     role: "Python Instructor",
     company: "Eldoret National Polytechnic",
     period: "Academic",
@@ -36,271 +30,157 @@ const experience = [
 
 export default function AboutPage() {
   return (
-    <div style={{ maxWidth: 860, margin: "0 auto", padding: "clamp(40px, 8vw, 64px) clamp(16px, 5vw, 24px) clamp(64px, 10vw, 96px)", backgroundColor: "#ffffff" }}>
-      {/* Header */}
-      <div
-        className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center"
-        style={{ marginBottom: "clamp(40px, 8vw, 64px)" }}
-      >
-        <div className="md:col-span-8">
-          <div
-            style={{
-              fontSize: "clamp(10px, 2vw, 12px)",
-              fontWeight: 600,
-              letterSpacing: 2,
-              color: "var(--accent)",
-              textTransform: "uppercase",
-              marginBottom: 8,
-            }}
-          >
-            About Me
-          </div>
-          <h1
-            style={{
-              fontSize: "clamp(28px, 6vw, 48px)",
-              fontWeight: 800,
-              letterSpacing: "-1px",
-              marginBottom: 24,
-              color: "var(--text)",
-            }}
-          >
-            Building software,{" "}
-            <span
-              style={{
-                background: "linear-gradient(135deg, var(--accent), var(--accent-2))",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-              }}
-            >
-              solving problems
-            </span>
-          </h1>
-          <p
-            style={{
-              fontSize: "clamp(14px, 2vw, 16px)",
-              color: "var(--text-muted)",
-              lineHeight: 1.7,
-              marginBottom: 16,
-            }}
-          >
-            I&apos;m Teddy Mbayaki, a software and mobile developer based in Nairobi, Kenya.
-            I work across the full stack — from web and mobile applications to IoT systems and
-            business automation tools.
-          </p>
-          <p style={{ fontSize: "clamp(13px, 2vw, 15px)", color: "var(--text-muted)", lineHeight: 1.7 }}>
-            My background includes professional software development at Xiracom, teaching Python
-            at Eldoret National Polytechnic, running a cyber café, and building independent
-            software projects. I enjoy working on systems that have real-world impact.
-          </p>
-        </div>
-
-        <div className="md:col-span-4 flex justify-center">
-          <div style={{ position: "relative" }} className="group">
+    <div
+      style={{
+        background: "linear-gradient(180deg, #110b06 0%, #1f1309 100%)",
+        minHeight: "100vh",
+      }}
+    >
+      <div style={{ maxWidth: 1180, margin: "0 auto", padding: "clamp(56px, 9vw, 96px) clamp(16px, 5vw, 24px) clamp(64px, 10vw, 96px)" }}>
+        <div className="slide-up" style={{ marginBottom: "clamp(40px, 8vw, 64px)", display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: 32, alignItems: "center" }}>
+          <div>
             <div
               style={{
-                position: "absolute",
-                inset: -6,
-                borderRadius: 20,
-                background: "linear-gradient(135deg, var(--accent), var(--accent-2))",
-                opacity: 0.1,
-                filter: "blur(6px)",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 8,
+                borderRadius: 999,
+                padding: "8px 16px",
+                fontSize: 12,
+                fontWeight: 700,
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                color: "#f3c45e",
+                border: "1px solid rgba(231, 165, 31, 0.45)",
+                background: "rgba(231, 165, 31, 0.08)",
+                marginBottom: 20,
               }}
-            />
-            <img
-              src="/images/teddy.jpg"
-              alt="Teddy Mbayaki"
+            >
+              <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#e7a51f", display: "inline-block" }} />
+              About Me
+            </div>
+            <h1
               style={{
-                width: "100%",
-                maxWidth: 240,
-                height: 280,
-                objectFit: "cover",
-                borderRadius: 16,
-                border: "3px solid var(--surface)",
-                boxShadow: "0 15px 30px -10px rgba(0,0,0,0.08)",
-                position: "relative",
-                zIndex: 1,
+                fontSize: "clamp(38px, 6vw, 68px)",
+                fontWeight: 900,
+                letterSpacing: "-0.06em",
+                lineHeight: 0.96,
+                margin: "0 0 20px",
+                color: "#f5f5f5",
               }}
-            />
+            >
+              Building software,
+              <span style={{ display: "block", color: "#e7a51f" }}>solving problems.</span>
+            </h1>
+            <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "rgba(255,255,255,0.76)", lineHeight: 1.7, margin: 0 }}>
+              I&apos;m Teddy Mbayaki, a software and mobile developer based in Nairobi, Kenya. I work across the full stack — from web and mobile applications to IoT systems and business automation tools.
+            </p>
+          </div>
+
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ position: "relative", width: "min(360px, 90%)" }}>
+              <div style={{ position: "absolute", inset: -18, borderRadius: 28, background: "linear-gradient(135deg, rgba(255,77,184,0.2), rgba(124,58,237,0.2))", filter: "blur(20px)" }} />
+              <img
+                src="/images/teddy.png"
+                alt="Teddy Mbayaki"
+                style={{
+                  width: "100%",
+                  height: "min(50vh, 440px)",
+                  objectFit: "cover",
+                  borderRadius: 24,
+                  border: "1px solid rgba(255,255,255,0.12)",
+                  boxShadow: "0 25px 60px rgba(0,0,0,0.35)",
+                  position: "relative",
+                  zIndex: 1,
+                }}
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Focus areas */}
-      <section style={{ marginBottom: "clamp(40px, 8vw, 64px)" }}>
-        <h2
-          style={{
-            fontSize: "clamp(20px, 4vw, 22px)",
-            fontWeight: 700,
-            letterSpacing: "-0.5px",
-            marginBottom: "clamp(16px, 4vw, 24px)",
-            color: "var(--text)",
-          }}
-        >
-          Areas of Focus
-        </h2>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
-            gap: "clamp(12px, 3vw, 16px)",
-          }}
-        >
-          {[
-            { icon: <Code2 size={20} />, title: "Web Applications", desc: "Full-stack web platforms built with Next.js, React, and modern tooling." },
-            { icon: <Smartphone size={20} />, title: "Mobile Apps", desc: "Cross-platform mobile applications using Flutter and React Native." },
-            { icon: <Cpu size={20} />, title: "IoT Systems", desc: "Hardware-software projects with ESP32, Arduino, and cloud dashboards." },
-            { icon: <Database size={20} />, title: "Business Systems", desc: "Custom dashboards, management tools, and workflow automation." },
-          ].map((item, i) => (
-            <div
-              key={i}
-              style={{
-                padding: "22px 20px",
-                border: "1px solid var(--border)",
-                borderRadius: 12,
-                background: "var(--surface)",
-              }}
-            >
+        <section className="slide-up" style={{ marginBottom: "clamp(40px, 8vw, 64px)" }}>
+          <h2 style={{ fontSize: "clamp(22px, 4vw, 32px)", fontWeight: 800, letterSpacing: "-0.05em", color: "#f5f5f5", marginBottom: 24 }}>
+            Areas of Focus
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
+            {[
+              { icon: <Code2 size={22} />, title: "Web Applications", desc: "Full-stack web platforms built with Next.js, React, and modern tooling." },
+              { icon: <Smartphone size={22} />, title: "Mobile Apps", desc: "Cross-platform mobile applications using Flutter and React Native." },
+              { icon: <Cpu size={22} />, title: "IoT Systems", desc: "Hardware-software projects with ESP32, Arduino, and cloud dashboards." },
+              { icon: <Database size={22} />, title: "Business Systems", desc: "Custom dashboards, management tools, and workflow automation." },
+            ].map((item, i) => (
               <div
+                className="interactive-card"
+                key={i}
                 style={{
-                  width: 40,
-                  height: 40,
-                  borderRadius: 8,
-                  background: "rgba(108,99,255,0.12)",
-                  color: "var(--accent)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginBottom: 12,
+                  padding: "22px 20px",
+                  borderRadius: 18,
+                  border: "1px solid rgba(255,255,255,0.08)",
+                  background: "rgba(255,255,255,0.02)",
+                  boxShadow: "0 10px 20px rgba(0,0,0,0.12)",
+                  transition: "all 0.25s ease",
                 }}
               >
-                {item.icon}
-              </div>
-              <h3 style={{ fontSize: 15, fontWeight: 700, marginBottom: 6, color: "var(--text)" }}>
-                {item.title}
-              </h3>
-              <p style={{ fontSize: 13, color: "var(--text-muted)", lineHeight: 1.6 }}>
-                {item.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Skills */}
-      <section style={{ marginBottom: 64 }}>
-        <h2
-          style={{
-            fontSize: 22,
-            fontWeight: 700,
-            letterSpacing: "-0.5px",
-            marginBottom: 24,
-            color: "var(--text)",
-          }}
-        >
-          Technical Skills
-        </h2>
-        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-          {Object.entries(skills).map(([category, items]) => (
-            <div key={category}>
-              <div
-                style={{
-                  fontSize: 11,
-                  fontWeight: 600,
-                  letterSpacing: 1.5,
-                  color: "var(--text-dim)",
-                  textTransform: "uppercase",
-                  marginBottom: 10,
-                }}
-              >
-                {category}
-              </div>
-              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-                {items.map((s) => (
-                  <span
-                    key={s}
-                    style={{
-                      padding: "6px 14px",
-                      borderRadius: 8,
-                      border: "1px solid var(--border)",
-                      background: "var(--surface)",
-                      fontSize: 13,
-                      fontWeight: 500,
-                      color: "var(--text-muted)",
-                    }}
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Experience */}
-      <section>
-        <h2
-          style={{
-            fontSize: 22,
-            fontWeight: 700,
-            letterSpacing: "-0.5px",
-            marginBottom: 24,
-            color: "var(--text)",
-          }}
-        >
-          Experience
-        </h2>
-        <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
-          {experience.map((exp, i) => (
-            <div
-              key={i}
-              style={{
-                padding: "24px",
-                border: "1px solid var(--border)",
-                borderRadius: 12,
-                background: "var(--surface)",
-                marginBottom: 12,
-              }}
-            >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "flex-start",
-                  flexWrap: "wrap",
-                  gap: 8,
-                  marginBottom: 8,
-                }}
-              >
-                <div>
-                  <h3 style={{ fontSize: 16, fontWeight: 700, color: "var(--text)", marginBottom: 2 }}>
-                    {exp.role}
-                  </h3>
-                  <div style={{ fontSize: 14, color: "var(--accent)", fontWeight: 500 }}>
-                    {exp.company}
-                  </div>
+                <div style={{ width: 42, height: 42, borderRadius: 12, background: "rgba(255,77,184,0.12)", color: "#ff7ccd", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 14 }}>
+                  {item.icon}
                 </div>
-                <span
-                  style={{
-                    fontSize: 12,
-                    padding: "4px 10px",
-                    borderRadius: 6,
-                    background: "var(--surface-2)",
-                    color: "var(--text-dim)",
-                    border: "1px solid var(--border)",
-                  }}
-                >
-                  {exp.period}
-                </span>
+                <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 8, color: "#f5f5f5" }}>{item.title}</h3>
+                <p style={{ fontSize: 14, color: "rgba(255,255,255,0.72)", lineHeight: 1.6, margin: 0 }}>{item.desc}</p>
               </div>
-              <p style={{ fontSize: 14, color: "var(--text-muted)", lineHeight: 1.6 }}>
-                {exp.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
+
+        <section className="slide-up" style={{ marginBottom: 60 }}>
+          <h2 style={{ fontSize: "clamp(22px, 4vw, 32px)", fontWeight: 800, letterSpacing: "-0.05em", color: "#f5f5f5", marginBottom: 22 }}>
+            Technical Skills
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
+            {Object.entries(skills).map(([category, items]) => (
+              <div key={category}>
+                <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: 10 }}>
+                  {category}
+                </div>
+                <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                  {items.map((s) => (
+                    <span key={s} style={{ padding: "8px 14px", borderRadius: 10, border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.03)", color: "rgba(255,255,255,0.8)", fontSize: 13, fontWeight: 600 }}>
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="slide-up">
+          <h2 style={{ fontSize: "clamp(22px, 4vw, 32px)", fontWeight: 800, letterSpacing: "-0.05em", color: "#f5f5f5", marginBottom: 22 }}>
+            Experience
+          </h2>
+          <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+            {experience.map((exp, i) => (
+              <div
+                key={i}
+                style={{
+                  padding: "22px 24px",
+                  borderRadius: 18,
+                  border: "1px solid rgba(255,255,255,0.08)",
+                  background: "rgba(255,255,255,0.02)",
+                }}
+              >
+                <div style={{ display: "flex", justifyContent: "space-between", gap: 16, flexWrap: "wrap", marginBottom: 6 }}>
+                  <div>
+                    <div style={{ fontSize: 14, fontWeight: 700, color: "#ff7ccd" }}>{exp.role}</div>
+                    <div style={{ fontSize: 15, color: "#f5f5f5", fontWeight: 600 }}>{exp.company}</div>
+                  </div>
+                  <span style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.55)", paddingTop: 2 }}>{exp.period}</span>
+                </div>
+                <p style={{ margin: 0, fontSize: 14, color: "rgba(255,255,255,0.72)", lineHeight: 1.7 }}>{exp.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

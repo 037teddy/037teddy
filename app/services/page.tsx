@@ -70,195 +70,95 @@ const process = [
 
 export default function ServicesPage() {
   return (
-    <div style={{ maxWidth: 1100, margin: "0 auto", padding: "clamp(40px, 8vw, 64px) clamp(16px, 5vw, 24px) clamp(64px, 10vw, 96px)", backgroundColor: "#ffffff" }}>
-      {/* Header */}
-      <div style={{ marginBottom: "clamp(40px, 8vw, 72px)", maxWidth: 600 }}>
-        <div
-          style={{
-            fontSize: "clamp(10px, 2vw, 12px)",
-            fontWeight: 600,
-            letterSpacing: 2,
-            color: "var(--accent)",
-            textTransform: "uppercase",
-            marginBottom: 8,
-          }}
-        >
-          Services
-        </div>
-        <h1
-          style={{
-            fontSize: "clamp(28px, 6vw, 52px)",
-            fontWeight: 800,
-            letterSpacing: "-1px",
-            marginBottom: 16,
-            color: "var(--text)",
-          }}
-        >
-          What I Build
-        </h1>
-        <p style={{ fontSize: "clamp(14px, 2vw, 16px)", color: "var(--text-muted)", lineHeight: 1.6 }}>
-          From simple websites to complex IoT systems, I take projects from idea to
-          deployed product. Based in Nairobi, working with clients worldwide.
-        </p>
-      </div>
-
-      {/* Services */}
-      <div style={{ display: "flex", flexDirection: "column", gap: "clamp(16px, 4vw, 24px)", marginBottom: "clamp(64px, 10vw, 96px)" }}>
-        {services.map((s, i) => (
-          <div
-            key={i}
-            style={{
-              padding: "clamp(24px, 5vw, 36px) clamp(20px, 5vw, 32px)",
-              border: "1px solid var(--border)",
-              borderRadius: 16,
-              background: "#ffffff",
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-              gap: "clamp(20px, 5vw, 32px)",
-              alignItems: "start",
-            }}
-          >
-            <div>
-              <div
-                style={{
-                  width: 52,
-                  height: 52,
-                  borderRadius: 12,
-                  background: "rgba(108,99,255,0.12)",
-                  color: "var(--accent)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  marginBottom: 16,
-                }}
-              >
-                {s.icon}
-              </div>
-              <div style={{ fontSize: "clamp(10px, 2vw, 12px)", fontWeight: 600, color: "var(--text-dim)", letterSpacing: 1, textTransform: "uppercase", marginBottom: 6 }}>
-                {s.tagline}
-              </div>
-              <h2 style={{ fontSize: "clamp(20px, 4vw, 24px)", fontWeight: 700, letterSpacing: "-0.5px", marginBottom: 12, color: "var(--text)" }}>
-                {s.title}
-              </h2>
-              <p style={{ fontSize: "clamp(13px, 2vw, 15px)", color: "var(--text-muted)", lineHeight: 1.6 }}>
-                {s.desc}
-              </p>
-            </div>
-            <div>
-              <div style={{ fontSize: "clamp(10px, 2vw, 12px)", fontWeight: 600, color: "var(--text-dim)", letterSpacing: 1, textTransform: "uppercase", marginBottom: 12 }}>
-                What you get
-              </div>
-              <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-                {s.deliverables.map((d, j) => (
-                  <li
-                    key={j}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 10,
-                      padding: "10px 0",
-                      borderBottom: j < s.deliverables.length - 1 ? "1px solid var(--border)" : "none",
-                      fontSize: 14,
-                      color: "var(--text-muted)",
-                    }}
-                  >
-                    <span style={{ color: "var(--accent-2)", fontSize: 16 }}>✓</span>
-                    {d}
-                  </li>
-                ))}
-              </ul>
-            </div>
+    <div style={{ background: "linear-gradient(180deg, #110b06 0%, #1f1309 100%)", minHeight: "100vh" }}>
+      <div style={{ maxWidth: 1180, margin: "0 auto", padding: "clamp(56px, 9vw, 96px) clamp(16px, 5vw, 24px) clamp(64px, 10vw, 96px)" }}>
+        <div className="slide-up" style={{ marginBottom: "clamp(40px, 8vw, 72px)", maxWidth: 640 }}>
+          <div style={{ display: "inline-flex", alignItems: "center", gap: 8, borderRadius: 999, padding: "8px 16px", fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "#f3c45e", border: "1px solid rgba(231, 165, 31, 0.45)", background: "rgba(231, 165, 31, 0.08)", marginBottom: 18 }}>
+            <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#e7a51f", display: "inline-block" }} />
+            Services
           </div>
-        ))}
-      </div>
+          <h1 style={{ fontSize: "clamp(38px, 6vw, 72px)", fontWeight: 900, letterSpacing: "-0.06em", lineHeight: 0.96, margin: "0 0 16px", color: "#f5f5f5" }}>
+            What I Build
+          </h1>
+          <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "rgba(255,255,255,0.76)", lineHeight: 1.7, margin: 0 }}>
+            From simple websites to complex IoT systems, I take projects from idea to deployed product. Based in Nairobi, working with clients worldwide.
+          </p>
+        </div>
 
-      {/* Process */}
-      <section style={{ marginBottom: 96 }}>
-        <h2
-          style={{
-            fontSize: 28,
-            fontWeight: 800,
-            letterSpacing: "-0.8px",
-            marginBottom: 40,
-            color: "var(--text)",
-            textAlign: "center",
-          }}
-        >
-          How I Work
-        </h2>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-            gap: 20,
-          }}
-        >
-          {process.map((p) => (
+        <div className="slide-up" style={{ display: "flex", flexDirection: "column", gap: 18, marginBottom: "clamp(64px, 10vw, 96px)" }}>
+          {services.map((s, i) => (
             <div
-              key={p.step}
+              className="interactive-card"
+              key={i}
               style={{
-                padding: "24px",
-                border: "1px solid var(--border)",
-                borderRadius: 12,
-                background: "var(--surface)",
+                padding: "clamp(22px, 5vw, 34px)",
+                border: "1px solid rgba(255,255,255,0.08)",
+                borderRadius: 22,
+                background: "rgba(255,255,255,0.02)",
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                gap: "clamp(20px, 5vw, 32px)",
+                alignItems: "start",
+                transition: "all 0.25s ease",
               }}
             >
-              <div
-                style={{
-                  fontSize: 32,
-                  fontWeight: 800,
-                  color: "rgba(108,99,255,0.2)",
-                  fontVariantNumeric: "tabular-nums",
-                  marginBottom: 12,
-                  letterSpacing: "-1px",
-                }}
-              >
-                {p.step}
+              <div>
+                <div style={{ width: 56, height: 56, borderRadius: 16, background: "rgba(255,77,184,0.12)", color: "#ff7ccd", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: 16 }}>
+                  {s.icon}
+                </div>
+                <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.55)", marginBottom: 8 }}>
+                  {s.tagline}
+                </div>
+                <h2 style={{ fontSize: "clamp(22px, 4vw, 30px)", fontWeight: 800, letterSpacing: "-0.05em", margin: "0 0 12px", color: "#f5f5f5" }}>
+                  {s.title}
+                </h2>
+                <p style={{ fontSize: 15, color: "rgba(255,255,255,0.74)", lineHeight: 1.7, margin: 0 }}>
+                  {s.desc}
+                </p>
               </div>
-              <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 8, color: "var(--text)" }}>
-                {p.title}
-              </h3>
-              <p style={{ fontSize: 14, color: "var(--text-muted)", lineHeight: 1.6 }}>
-                {p.desc}
-              </p>
+              <div>
+                <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.55)", marginBottom: 12 }}>
+                  What you get
+                </div>
+                <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                  {s.deliverables.map((d, j) => (
+                    <li key={j} style={{ display: "flex", alignItems: "center", gap: 10, padding: "10px 0", borderBottom: j < s.deliverables.length - 1 ? "1px solid rgba(255,255,255,0.08)" : "none", fontSize: 14, color: "rgba(255,255,255,0.76)" }}>
+                      <span style={{ color: "#ff7ccd", fontSize: 16 }}>✓</span>
+                      {d}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
-      </section>
 
-      {/* CTA */}
-      <div
-        style={{
-          padding: "48px",
-          borderRadius: 16,
-          border: "1px solid rgba(108,99,255,0.2)",
-          background: "rgba(108,99,255,0.06)",
-          textAlign: "center",
-        }}
-      >
-        <h3 style={{ fontSize: 28, fontWeight: 800, letterSpacing: "-0.8px", marginBottom: 12, color: "var(--text)" }}>
-          Ready to start your project?
-        </h3>
-        <p style={{ fontSize: 16, color: "var(--text-muted)", marginBottom: 28, maxWidth: 480, margin: "0 auto 28px" }}>
-          Tell me what you&apos;re building and I&apos;ll get back to you within 24 hours.
-        </p>
-        <Link
-          href="/contact"
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            gap: 8,
-            padding: "14px 32px",
-            borderRadius: 10,
-            background: "var(--accent)",
-            color: "#fff",
-            fontWeight: 700,
-            fontSize: 16,
-            textDecoration: "none",
-          }}
-        >
-          Get in Touch <ArrowRight size={16} />
-        </Link>
+        <section className="slide-up" style={{ marginBottom: 60 }}>
+          <h2 style={{ fontSize: "clamp(26px, 4vw, 38px)", fontWeight: 900, letterSpacing: "-0.05em", marginBottom: 24, color: "#f5f5f5", textAlign: "center" }}>
+            How I Work
+          </h2>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 18 }}>
+            {process.map((p) => (
+              <div key={p.step} style={{ padding: "24px 20px", borderRadius: 18, border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.02)" }}>
+                <div style={{ fontSize: 34, fontWeight: 800, color: "rgba(255, 124, 205, 0.28)", marginBottom: 10, letterSpacing: "-0.08em" }}>{p.step}</div>
+                <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 8, color: "#f5f5f5" }}>{p.title}</h3>
+                <p style={{ fontSize: 14, color: "rgba(255,255,255,0.72)", lineHeight: 1.7, margin: 0 }}>{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <div className="slide-up" style={{ padding: "48px 28px", borderRadius: 24, border: "1px solid rgba(255, 124, 205, 0.25)", background: "rgba(255, 77, 184, 0.06)", textAlign: "center" }}>
+          <h3 style={{ fontSize: "clamp(24px, 4vw, 34px)", fontWeight: 800, letterSpacing: "-0.05em", marginBottom: 12, color: "#f5f5f5" }}>
+            Ready to start your project?
+          </h3>
+          <p style={{ fontSize: 16, color: "rgba(255,255,255,0.72)", maxWidth: 520, margin: "0 auto 26px", lineHeight: 1.7 }}>
+            Tell me what you&apos;re building and I&apos;ll get back to you within 24 hours.
+          </p>
+          <Link href="/contact" style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "14px 30px", borderRadius: 12, background: "linear-gradient(135deg, #e7a51f, #b86f08)", color: "#1a1007", fontWeight: 800, fontSize: 16, textDecoration: "none", boxShadow: "0 16px 26px rgba(231,165,31,0.22)" }}>
+            Get in Touch <ArrowRight size={16} />
+          </Link>
+        </div>
       </div>
     </div>
   );

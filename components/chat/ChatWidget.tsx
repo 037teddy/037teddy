@@ -128,7 +128,7 @@ export default function ChatWidget() {
             height: "min(70vh, 520px)",
             borderRadius: 16,
             border: "1px solid var(--border)",
-            background: "#ffffff",
+            background: "#1a1008",
             boxShadow: "0 24px 60px rgba(0, 0, 0, 0.18)",
             display: "flex",
             flexDirection: "column",
@@ -196,7 +196,7 @@ export default function ChatWidget() {
                   lineHeight: 1.6,
                   alignSelf: m.role === "user" ? "flex-end" : "flex-start",
                   background:
-                    m.role === "user" ? "var(--accent)" : "#ffffff",
+                    m.role === "user" ? "var(--accent)" : "rgba(255,247,232,0.08)",
                   color: m.role === "user" ? "#fff" : "var(--text)",
                   border:
                     m.role === "user" ? "none" : "1px solid var(--border)",
@@ -216,7 +216,7 @@ export default function ChatWidget() {
                   borderRadius: 12,
                   fontSize: 13,
                   alignSelf: "flex-start",
-                  background: "#ffffff",
+                  background: "rgba(255,247,232,0.08)",
                   border: "1px solid var(--border)",
                   color: "var(--text-muted)",
                 }}
@@ -261,7 +261,7 @@ export default function ChatWidget() {
                     fontWeight: 600,
                     cursor: "pointer",
                     border: "1px solid var(--border)",
-                    background: "#ffffff",
+                    background: "rgba(255,247,232,0.06)",
                     color: "var(--accent)",
                     transition: "all 0.2s",
                   }}
@@ -281,7 +281,7 @@ export default function ChatWidget() {
             style={{
               padding: 12,
               borderTop: "1px solid var(--border)",
-              background: "#ffffff",
+              background: "#1a1008",
               display: "flex",
               gap: 8,
             }}

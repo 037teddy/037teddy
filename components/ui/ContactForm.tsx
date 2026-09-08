@@ -27,9 +27,7 @@ export default function ContactForm() {
       `Message: ${message}`,
     ];
 
-    const whatsappUrl = `https://wa.me/254742396020?text=${encodeURIComponent(
-      lines.join("\n")
-    )}`;
+    const whatsappUrl = `https://wa.me/254742396020?text=${encodeURIComponent(lines.join("\n"))}`;
 
     setWhatsappUrl(whatsappUrl);
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
@@ -43,69 +41,19 @@ export default function ContactForm() {
 
   if (status === "success") {
     return (
-      <div
-        style={{
-          padding: "clamp(24px, 5vw, 48px) clamp(24px, 5vw, 32px)",
-          borderRadius: 16,
-          border: "1px solid rgba(13, 148, 136, 0.2)",
-          background: "rgba(13, 148, 136, 0.04)",
-          textAlign: "center",
-        }}
-      >
-        <div
-          style={{
-            width: 56,
-            height: 56,
-            borderRadius: "50%",
-            background: "rgba(13, 148, 136, 0.1)",
-            color: "var(--accent-2)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            margin: "0 auto 20px",
-          }}
-        >
+      <div style={{ padding: "clamp(28px, 5vw, 44px)", borderRadius: 24, border: "1px solid rgba(52,211,153,0.18)", background: "rgba(52,211,153,0.08)", textAlign: "center", boxShadow: "0 18px 40px rgba(0, 0, 0, 0.16)" }}>
+        <div style={{ width: 60, height: 60, borderRadius: "50%", background: "rgba(52,211,153,0.12)", color: "#8ef0c7", display: "flex", alignItems: "center", justifyContent: "center", margin: "0 auto 20px" }}>
           <CheckCircle size={28} />
         </div>
-        <h3 style={{ fontSize: "clamp(18px, 4vw, 20px)", fontWeight: 700, marginBottom: 8, color: "var(--text)" }}>
-          Message Sent!
-        </h3>
-        <p style={{ fontSize: "clamp(13px, 2vw, 14px)", color: "var(--text-muted)", lineHeight: 1.6 }}>
+        <h3 style={{ fontSize: "clamp(20px, 4vw, 24px)", fontWeight: 800, marginBottom: 8, color: "#f5f5f5" }}>Message Sent!</h3>
+        <p style={{ fontSize: 14, color: "rgba(255,255,255,0.72)", lineHeight: 1.7, margin: "0 0 18px" }}>
           WhatsApp should have opened with your details pre-filled. If it didn&apos;t, tap the button below to open it — then press <strong>Send</strong>. I&apos;ll get back to you within 24 hours.
         </p>
-        <button
-          onClick={() => setStatus("idle")}
-          style={{
-            marginTop: 24,
-            padding: "10px 18px",
-            fontSize: "clamp(12px, 2vw, 13px)",
-            fontWeight: 600,
-            borderRadius: 8,
-            border: "1px solid var(--border)",
-            background: "#ffffff",
-            color: "var(--text)",
-            cursor: "pointer",
-            minHeight: 44,
-          }}
-        >
+        <button onClick={() => setStatus("idle")} style={{ marginTop: 8, padding: "10px 18px", fontSize: 13, fontWeight: 700, borderRadius: 10, border: "1px solid rgba(255,255,255,0.12)", background: "rgba(255,255,255,0.04)", color: "#f5f5f5", cursor: "pointer" }}>
           Send another message
         </button>
         {whatsappUrl && (
-          <button
-            onClick={() => window.open(whatsappUrl, "_blank", "noopener,noreferrer")}
-            style={{
-              marginTop: 8,
-              padding: "10px 18px",
-              fontSize: "clamp(12px, 2vw, 13px)",
-              fontWeight: 600,
-              borderRadius: 8,
-              border: "none",
-              background: "var(--accent-2)",
-              color: "#fff",
-              cursor: "pointer",
-              minHeight: 44,
-            }}
-          >
+          <button onClick={() => window.open(whatsappUrl, "_blank", "noopener,noreferrer")} style={{ marginTop: 12, padding: "10px 18px", fontSize: 13, fontWeight: 700, borderRadius: 10, border: "none", background: "linear-gradient(135deg, #e7a51f, #b86f08)", color: "#1a1007", cursor: "pointer" }}>
             Open WhatsApp
           </button>
         )}
@@ -114,119 +62,31 @@ export default function ContactForm() {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      style={{
-        padding: "clamp(24px, 5vw, 36px) clamp(24px, 5vw, 32px)",
-        borderRadius: 16,
-        border: "1px solid var(--border)",
-        background: "#ffffff",
-        display: "flex",
-        flexDirection: "column",
-        gap: "clamp(16px, 4vw, 20px)",
-        boxShadow: "0 1px 3px rgba(0,0,0,0.08)",
-      }}
-    >
-      <h2 style={{ fontSize: "clamp(18px, 4vw, 20px)", fontWeight: 700, color: "var(--text)", marginBottom: 4 }}>
-        Contact Form
-      </h2>
+    <form onSubmit={handleSubmit} style={{ padding: "clamp(24px, 5vw, 34px)", borderRadius: 24, border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.02)", display: "flex", flexDirection: "column", gap: 18, boxShadow: "0 18px 40px rgba(0,0,0,0.16)" }}>
+      <h2 style={{ fontSize: "clamp(22px, 4vw, 28px)", fontWeight: 800, letterSpacing: "-0.05em", color: "#f5f5f5", marginBottom: 4 }}>Contact Form</h2>
 
-      {/* Full Name */}
       <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-        <label style={{ fontSize: "clamp(11px, 2vw, 12px)", fontWeight: 600, color: "var(--text-muted)" }}>
-          Full Name
-        </label>
-        <input
-          type="text"
-          required
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Enter your Full name"
-          style={{
-            padding: "12px 16px",
-            borderRadius: 8,
-            border: "1px solid var(--border)",
-            background: "var(--surface-2)",
-            color: "var(--text)",
-            fontSize: "clamp(13px, 2vw, 14px)",
-            outline: "none",
-            minHeight: 44,
-          }}
-        />
+        <label style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)" }}>Full Name</label>
+        <input type="text" required value={name} onChange={(e) => setName(e.target.value)} placeholder="Enter your full name" style={{ padding: "12px 14px", borderRadius: 12, border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.03)", color: "#f5f5f5", fontSize: 14, outline: "none", minHeight: 44 }} />
       </div>
 
-      {/* Email */}
       <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-        <label style={{ fontSize: "clamp(11px, 2vw, 12px)", fontWeight: 600, color: "var(--text-muted)" }}>
-          Email Address
-        </label>
-        <input
-          type="email"
-          required
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="example@email.com"
-          style={{
-            padding: "12px 16px",
-            borderRadius: 8,
-            border: "1px solid var(--border)",
-            background: "var(--surface-2)",
-            color: "var(--text)",
-            fontSize: "clamp(13px, 2vw, 14px)",
-            outline: "none",
-            minHeight: 44,
-          }}
-        />
+        <label style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)" }}>Email Address</label>
+        <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="example@email.com" style={{ padding: "12px 14px", borderRadius: 12, border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.03)", color: "#f5f5f5", fontSize: 14, outline: "none", minHeight: 44 }} />
       </div>
 
-      {/* Phone Number */}
       <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-        <label style={{ fontSize: "clamp(11px, 2vw, 12px)", fontWeight: 600, color: "var(--text-muted)" }}>
-          Phone Number
-        </label>
-        <input
-          type="tel"
-          required
-          value={phone}
-          onChange={(e) => setPhone(e.target.value)}
-          placeholder="+254 700 000 0000"
-          style={{
-            padding: "12px 16px",
-            borderRadius: 8,
-            border: "1px solid var(--border)",
-            background: "var(--surface-2)",
-            color: "var(--text)",
-            fontSize: 14,
-            outline: "none",
-          }}
-        />
+        <label style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)" }}>Phone Number</label>
+        <input type="tel" required value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="+254 700 000 0000" style={{ padding: "12px 14px", borderRadius: 12, border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.03)", color: "#f5f5f5", fontSize: 14, outline: "none", minHeight: 44 }} />
       </div>
 
-      {/* Project Type selection */}
       <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-        <label style={{ fontSize: 12, fontWeight: 600, color: "var(--text-muted)" }}>
-          Project Type
-        </label>
+        <label style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)" }}>Project Type</label>
         <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
           {["Mobile App", "Website", "Custom Project"].map((type) => {
             const isSelected = projectType === type;
             return (
-              <button
-                key={type}
-                type="button"
-                onClick={() => setProjectType(type)}
-                style={{
-                  padding: "8px 16px",
-                  borderRadius: 8,
-                  fontSize: 13,
-                  fontWeight: 600,
-                  cursor: "pointer",
-                  border: isSelected ? "1px solid var(--accent)" : "1px solid var(--border)",
-                  background: isSelected ? "rgba(79, 70, 229, 0.08)" : "var(--surface-2)",
-                  color: isSelected ? "var(--accent)" : "var(--text-muted)",
-                  transition: "all 0.2s",
-                }}
-              >
+              <button key={type} type="button" onClick={() => setProjectType(type)} style={{ padding: "9px 14px", borderRadius: 10, border: isSelected ? "1px solid rgba(231,165,31,0.8)" : "1px solid rgba(255,255,255,0.08)", background: isSelected ? "rgba(231, 165, 31, 0.12)" : "rgba(255,255,255,0.03)", color: isSelected ? "#f3c45e" : "rgba(255,255,255,0.7)", fontSize: 12, fontWeight: 700, cursor: "pointer" }}>
                 {type}
               </button>
             );
@@ -234,52 +94,13 @@ export default function ContactForm() {
         </div>
       </div>
 
-      {/* Project Description */}
       <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-        <label style={{ fontSize: 12, fontWeight: 600, color: "var(--text-muted)" }}>
-          Project Description
-        </label>
-        <textarea
-          required
-          rows={4}
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Tell us about your project..."
-          style={{
-            padding: "12px 16px",
-            borderRadius: 8,
-            border: "1px solid var(--border)",
-            background: "var(--surface-2)",
-            color: "var(--text)",
-            fontSize: 14,
-            outline: "none",
-            resize: "vertical",
-          }}
-        />
+        <label style={{ fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)" }}>Project Details</label>
+        <textarea required value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Tell me a little about your project..." rows={5} style={{ width: "100%", resize: "vertical", minHeight: 120, padding: "12px 14px", borderRadius: 12, border: "1px solid rgba(255,255,255,0.08)", background: "rgba(255,255,255,0.03)", color: "#f5f5f5", fontSize: 14, outline: "none", fontFamily: "inherit" }} />
       </div>
 
-      {/* Submit Button */}
-      <button
-        type="submit"
-        disabled={status === "submitting"}
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: 8,
-          padding: "14px",
-          borderRadius: 8,
-          background: "var(--accent)",
-          color: "#fff",
-          fontSize: 14,
-          fontWeight: 700,
-          border: "none",
-          cursor: "pointer",
-          transition: "opacity 0.2s",
-          opacity: status === "submitting" ? 0.7 : 1,
-        }}
-      >
-        {status === "submitting" ? "Sending..." : "Send"}
+      <button type="submit" disabled={status === "submitting"} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", gap: 8, padding: "14px 20px", borderRadius: 12, border: "none", background: "linear-gradient(135deg, #e7a51f, #b86f08)", color: "#1a1007", fontSize: 14, fontWeight: 800, cursor: status === "submitting" ? "wait" : "pointer", opacity: status === "submitting" ? 0.8 : 1, minHeight: 46, boxShadow: "0 16px 26px rgba(231,165,31,0.2)" }}>
+        {status === "submitting" ? "Sending..." : "Send Message"}
         <Send size={15} />
       </button>
     </form>

@@ -6,7 +6,7 @@ FACTS ABOUT TEDDY MBAYAKI:
 - Full name: Teddy Mbayaki. Also referred to as Teddy Ijaka on LinkedIn.
 - Located in Nairobi, Kenya. Available for remote work worldwide.
 - Software and mobile developer with about 2 years of experience building web apps, mobile apps, IoT systems, and custom business software.
-- Helps first-time founders launch software from idea to reality in 4 to 6 weeks.
+- Helps first-time founders launch software from idea to reality with a clear, scope-based delivery process.
 - Available for freelance projects, full-time roles, and collaborations. Typically responds within 24 hours.
 
 SERVICES:
@@ -23,7 +23,6 @@ TECHNICAL SKILLS:
 - Tools: Git, GitHub, VS Code, Vercel, Figma
 
 EXPERIENCE:
-- Software Developer at Xiracom (recent) — software solutions across web and mobile platforms.
 - Python Instructor at Eldoret National Polytechnic (academic) — taught Python programming.
 - IT Intern at Eldoret National Polytechnic — IT support and system administration.
 
@@ -33,7 +32,7 @@ PROJECTS:
 3. Daycare Management System — PHP/MySQL web system for child enrollment, attendance, staff records, parent communication.
 4. Car Rental System — PHP/MySQL full-stack platform with fleet availability checking, booking reservations, admin panel, rental pricing calculator.
 
-METRICS: 98% project success rate, 10 projects delivered, ~6 weeks average delivery time.
+METRICS: 98% project success rate, 10 projects delivered, delivery timelines planned according to project scope and complexity.
 
 CONTACT:
 - Email: teddymbayaki@gmail.com

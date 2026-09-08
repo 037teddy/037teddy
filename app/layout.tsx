@@ -29,9 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning data-scroll-behavior="smooth">
-      <body style={{ backgroundColor: "#ffffff" }}>
+      <body style={{ background: "linear-gradient(180deg, #110b06 0%, #1f1309 100%)" }}>
         <Navbar />
-        <main style={{ paddingTop: 64, backgroundColor: "#ffffff", minHeight: "100vh" }}>{children}</main>
+        <main style={{ paddingTop: 64, background: "linear-gradient(180deg, #110b06 0%, #1f1309 100%)", minHeight: "100vh" }}>{children}</main>
         <Footer />
         <ChatWidget />
       </body>
