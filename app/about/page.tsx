@@ -37,7 +37,7 @@ export default function AboutPage() {
       }}
     >
       <div style={{ maxWidth: 1180, margin: "0 auto", padding: "clamp(56px, 9vw, 96px) clamp(16px, 5vw, 24px) clamp(64px, 10vw, 96px)" }}>
-        <div className="slide-up" style={{ marginBottom: "clamp(40px, 8vw, 64px)", display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: 32, alignItems: "center" }}>
+        <div className="slide-up about-hero" style={{ marginBottom: "clamp(40px, 8vw, 64px)", display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: 32, alignItems: "center" }}>
           <div>
             <div
               style={{
@@ -81,6 +81,7 @@ export default function AboutPage() {
             <div style={{ position: "relative", width: "min(360px, 90%)" }}>
               <div style={{ position: "absolute", inset: -18, borderRadius: 28, background: "linear-gradient(135deg, rgba(255,77,184,0.2), rgba(124,58,237,0.2))", filter: "blur(20px)" }} />
               <img
+                className="about-portrait"
                 src="/images/teddy.png"
                 alt="Teddy Mbayaki"
                 style={{

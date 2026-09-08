@@ -74,7 +74,7 @@ export default function CertificatesPage() {
           </p>
         </header>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 24 }}>
+        <div className="certificate-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: 24 }}>
           {certificates.map((certificate, index) => (
             <article key={certificate.title} className="slide-up interactive-card" style={{ animationDelay: `${index * 0.12}s`, overflow: "hidden", borderRadius: 20, border: "1px solid rgba(226,164,54,0.22)", background: "rgba(112,72,23,0.16)", boxShadow: "0 18px 45px rgba(0,0,0,0.2)" }}>
               <a href={certificate.image} target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, minHeight: 190, background: "linear-gradient(135deg, rgba(231,165,31,0.16), rgba(17,11,6,0.5))", padding: 12, textDecoration: "none" }} aria-label={`Open ${certificate.title} certificate full size`}>

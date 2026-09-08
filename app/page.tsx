@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowRight, Zap, Smartphone, Globe, Cpu, GitBranch, Mail, BriefcaseBusiness } from "lucide-react";
+import { ArrowRight, Zap, Smartphone, Globe, Cpu } from "lucide-react";
 import { getFeaturedProjects } from "@/data/projects";
 import ProjectCard from "@/components/projects/ProjectCard";
 
@@ -66,6 +66,7 @@ export default function HomePage() {
           }}
         >
           <div
+            className="hero-layout"
             style={{
               display: "grid",
               gridTemplateColumns: "1.1fr 0.9fr",
@@ -73,7 +74,7 @@ export default function HomePage() {
               alignItems: "center",
             }}
           >
-            <div style={{ maxWidth: 620 }}>
+            <div className="hero-copy" style={{ maxWidth: 620 }}>
               <div
                 style={{
                   display: "inline-flex",
@@ -132,7 +133,11 @@ export default function HomePage() {
                 Building modern web experiences and intelligent applications with clean UI, scalable architecture, and AI-powered solutions.
               </p>
 
-              <div style={{ display: "flex", flexWrap: "wrap", gap: 14, marginBottom: 26 }}>
+              <div className="mobile-hero-portrait">
+                <img src="/images/teddy.png" alt="Teddy Mbayaki" />
+              </div>
+
+              <div className="hero-actions" style={{ display: "flex", flexWrap: "wrap", gap: 14, marginBottom: 26 }}>
                 <Link
                   href="/projects"
                   style={{
@@ -176,24 +181,11 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <div style={{ display: "flex", alignItems: "center", gap: 18, color: "rgba(255,255,255,0.9)", fontSize: 13, letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 700 }}>
-                <span style={{ opacity: 0.8 }}>Profiles</span>
-                <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-                  <a href="https://github.com/037teddy" target="_blank" rel="noreferrer" style={{ color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", width: 28, height: 28, borderRadius: "50%", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.12)" }}>
-                    <GitBranch size={14} />
-                  </a>
-                  <a href="https://www.linkedin.com/in/teddy-ijaka-631a77412/" target="_blank" rel="noreferrer" style={{ color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", width: 28, height: 28, borderRadius: "50%", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.12)" }}>
-                    <Globe size={14} />
-                  </a>
-                  <a href="mailto:teddymbayaki@gmail.com" style={{ color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", width: 28, height: 28, borderRadius: "50%", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.12)" }}>
-                    <Mail size={14} />
-                  </a>
-                </div>
-              </div>
             </div>
 
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div className="hero-portrait-wrap" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
               <div
+                className="hero-portrait-frame"
                 style={{
                   position: "relative",
                   width: "min(440px, 85vw)",
@@ -204,25 +196,8 @@ export default function HomePage() {
                   boxShadow: "0 25px 60px rgba(0,0,0,0.32)",
                 }}
               >
-                <div
-                  style={{
-                    position: "absolute",
-                    inset: "auto 18px 18px auto",
-                    width: 36,
-                    height: 36,
-                    borderRadius: 10,
-                    background: "rgba(255,255,255,0.08)",
-                    border: "1px solid rgba(255,255,255,0.14)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    color: "#fff",
-                    zIndex: 2,
-                  }}
-                >
-                  <BriefcaseBusiness size={16} />
-                </div>
                 <img
+                  className="hero-portrait"
                   src="/images/teddy.png"
                   alt="Teddy Mbayaki"
                   style={{
