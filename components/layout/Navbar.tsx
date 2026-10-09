@@ -116,6 +116,32 @@ export default function Navbar() {
           >
             Contact
           </Link>
+          <Link
+            href="/resume/Teddy_Mbayaki_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              padding: "8px 18px",
+              borderRadius: 8,
+              fontSize: 13,
+              fontWeight: 600,
+              textDecoration: "none",
+              background: "rgba(255,255,255,0.06)",
+              border: "1px solid rgba(255,255,255,0.18)",
+              color: "#fff",
+              transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "translateY(-2px)";
+              e.currentTarget.style.boxShadow = "0 10px 18px rgba(255,77,184,0.22)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "translateY(0)";
+              e.currentTarget.style.boxShadow = "none";
+            }}
+          >
+            Resume
+          </Link>
         </div>
 
         <button

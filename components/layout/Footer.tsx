@@ -59,6 +59,7 @@ export default function Footer() {
                 { href: "/services", label: "Services" },
                 { href: "/about", label: "About" },
                 { href: "/contact", label: "Contact" },
+                { href: "/resume/Teddy_Mbayaki_Resume.pdf", label: "Resume" },
               ].map((l) => (
                 <Link
                   key={l.href}

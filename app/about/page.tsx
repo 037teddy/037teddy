@@ -6,25 +6,32 @@ export const metadata = {
 };
 
 const skills = {
-  "Languages": ["TypeScript", "Python", "JavaScript", "PHP", "C/C++", "Dart"],
-  "Frameworks": ["Next.js", "React", "Flutter", "Tailwind CSS", "Bootstrap"],
-  "Backend & DB": ["Node.js", "Supabase", "Firebase", "MySQL", "PostgreSQL"],
+  "Frontend & AI": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel AI SDK", "Gemini", "Claude"],
+  "Backend": ["Node.js", "Express", "Python", "REST APIs", "GraphQL", "Swagger/OpenAPI"],
+  "Databases": ["PostgreSQL", "SQLite", "MySQL", "MongoDB", "Supabase", "Firebase"],
+  "DevOps & Tools": ["Docker", "Docker Compose", "Git", "GitHub", "Vercel", "Linux"],
+  "Testing & Quality": ["Vitest", "React Testing Library", "Lighthouse", "axe DevTools"],
   "IoT & Hardware": ["ESP32", "Arduino", "HC-SR04 Sensors", "MQTT"],
-  "Tools": ["Git", "GitHub", "VS Code", "Vercel", "Figma"],
 };
 
 const experience = [
   {
-    role: "Python Instructor",
-    company: "Eldoret National Polytechnic",
-    period: "Academic",
-    desc: "Taught Python programming to students, covering fundamentals through practical applications.",
+    role: "Frontend & Backend AI Engineering Intern",
+    company: "FlyRank AI",
+    period: "Jun 2026 – Aug 2026 · Remote",
+    desc: "Built AI chat features (Vercel AI SDK + Gemini), migrated apps to Next.js, containerized REST APIs with Docker/PostgreSQL, implemented Stripe billing engine, and improved Lighthouse mobile score from 49 to 85.",
   },
   {
-    role: "IT Intern",
-    company: "Eldoret National Polytechnic",
-    period: "Internship",
-    desc: "Hands-on IT support and system administration experience.",
+    role: "Customer Service Assistant",
+    company: "Cyber Café / Internet Café",
+    period: "Jan 2026 – Apr 2026 · Kenya",
+    desc: "Provided customer support for printing, scanning, and internet services. Handled document processing, data entry, record keeping, and safeguarded customer data.",
+  },
+  {
+    role: "IT & Administrative Support Intern",
+    company: "The Eldoret National Polytechnic",
+    period: "May 2024 – Jul 2024 · Kenya",
+    desc: "Assisted with network setup, configuration, and troubleshooting. Supported network security, resolved system errors, and improved network uptime by 15%.",
   },
 ];
 
@@ -73,7 +80,7 @@ export default function AboutPage() {
               <span style={{ display: "block", color: "#e7a51f" }}>solving problems.</span>
             </h1>
             <p style={{ fontSize: "clamp(15px, 2vw, 18px)", color: "rgba(255,255,255,0.76)", lineHeight: 1.7, margin: 0 }}>
-              I&apos;m Teddy Mbayaki, a software and mobile developer based in Nairobi, Kenya. I work across the full stack — from web and mobile applications to IoT systems and business automation tools.
+              I&apos;m Teddy Mbayaki, a Software Engineer based in Nairobi, Kenya. I design and build scalable backend systems, APIs, and production frontend applications — with real LLM integrations, cloud-native architecture, and a focus on performance, accessibility, and clean code.
             </p>
           </div>
 
@@ -181,6 +188,29 @@ export default function AboutPage() {
             ))}
           </div>
         </section>
+
+        <div className="slide-up" style={{ textAlign: "center", marginTop: 40 }}>
+          <a
+            href="/resume/Teddy_Mbayaki_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 8,
+              padding: "14px 28px",
+              borderRadius: 12,
+              background: "linear-gradient(135deg, #e7a51f, #b86f08)",
+              color: "#1a1007",
+              fontWeight: 800,
+              fontSize: 16,
+              textDecoration: "none",
+              boxShadow: "0 16px 26px rgba(231,165,31,0.22)",
+            }}
+          >
+            Download Resume
+          </a>
+        </div>
       </div>
     </div>
   );
