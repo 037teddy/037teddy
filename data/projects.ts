@@ -15,7 +15,7 @@ export const projects: Project[] = [
     solution:
       "A centralized web platform where group admins can register members, record contributions, generate reports, and track balances in real time.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
-    githubUrl: "https://github.com/037teddy/Chama_pamoja",
+    githubUrl: "",
     liveUrl: "",
     featured: true,
     coverImage: "/images/projects/chama.png",
@@ -156,7 +156,7 @@ export const projects: Project[] = [
     solution:
       "A single application that aggregates searchable space listings, surfaces key details, and makes it easy to compare meeting rooms, BnBs, and short-term rental spaces in one place.",
     techStack: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
-    githubUrl: "https://github.com/037teddy/Space-finder",
+    githubUrl: "",
     liveUrl: "",
     featured: true,
     coverImage: "/images/projects/space-finder.png",
